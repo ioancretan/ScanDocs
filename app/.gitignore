@@ -1,0 +1,36 @@
+### Gradle ###
+# Exclude Folder List #
+.gradle/
+build/
+.idea/
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log Files
+*.log
+
+.DS_Store
+
+# Captures (heap dumps, layout inspector, etc)
+captures/
+
+# push payloads
+tools/pushes/*.json
+
+# play upload credentials
+app/play-publish-credentials.json
