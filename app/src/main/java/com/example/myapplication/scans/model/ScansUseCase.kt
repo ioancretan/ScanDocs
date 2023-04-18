@@ -1,4 +1,4 @@
-package com.example.myapplication.scans
+package com.example.myapplication.scans.model
 
 import javax.inject.Inject
 import kotlinx.coroutines.flow.Flow

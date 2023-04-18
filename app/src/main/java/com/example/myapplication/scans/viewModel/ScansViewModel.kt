@@ -1,10 +1,14 @@
-package com.example.myapplication.scans
+package com.example.myapplication.scans.viewModel
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.toMutableStateList
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.myapplication.scans.model.ScansUseCase
+import com.example.myapplication.scans.model.Resource
+import com.example.myapplication.scans.model.ScanItem
+import com.example.myapplication.scans.model.ScansState
 import javax.inject.Inject
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -22,7 +26,7 @@ class ScansViewModel @Inject constructor(
     }
 
     fun getScans() {
-        getScansUseCase.let { it() }.onEach { result ->
+        getScansUseCase().onEach { result ->
             when (result) {
                 is Resource.Success -> {
                     _state.value = ScansState(scans = mutableStateOf(result.data.toMutableStateList()))

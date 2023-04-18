@@ -1,7 +1,4 @@
-package com.example.myapplication.scans
-
-import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.mutableStateOf
+package com.example.myapplication.scans.model
 
 class ScansRepositoryImpl : ScansRepository {
 
@@ -14,8 +11,3 @@ class ScansRepositoryImpl : ScansRepository {
         return items.toMutableList()
     }
 }
-
-data class ScanItem(
-    var id: Int,
-    var isSelected: MutableState<Boolean> = mutableStateOf(false)
-)

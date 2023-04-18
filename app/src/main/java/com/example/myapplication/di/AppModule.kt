@@ -1,9 +1,9 @@
 package com.example.myapplication.di
 
-import com.example.myapplication.scans.ScansRepository
-import com.example.myapplication.scans.ScansRepositoryImpl
-import com.example.myapplication.scans.ScansUseCase
-import com.example.myapplication.scans.ScansViewModel
+import com.example.myapplication.scans.model.ScansRepository
+import com.example.myapplication.scans.model.ScansRepositoryImpl
+import com.example.myapplication.scans.model.ScansUseCase
+import com.example.myapplication.scans.viewModel.ScansViewModel
 import dagger.Module
 import dagger.Provides
 

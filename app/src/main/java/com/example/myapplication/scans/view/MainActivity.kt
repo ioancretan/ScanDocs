@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalFoundationApi::class)
 
-package com.example.myapplication
+package com.example.myapplication.scans.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,13 +8,11 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.mutableStateOf
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.myapplication.scans.ScansViewModel
-import com.example.myapplication.ui.ScansList
+import com.example.myapplication.ScansApplication
+import com.example.myapplication.scans.viewModel.ScansViewModel
 import javax.inject.Inject
 
 class MainActivity : ComponentActivity() {
